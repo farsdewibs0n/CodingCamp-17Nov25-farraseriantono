@@ -12,3 +12,72 @@
     align-items: center;
     justify-content: space-between;
 }
+
+#home-page {
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    min-height: 500px; /* keeps your existing min height */
+}
+
+#home-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* optional dark overlay for readability */
+    z-index: 0;
+}
+
+#home-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Home Page Slider Styles 
+    TODO: Fix slider functionality
+#home-page { position: relative; overflow: hidden; }
+
+.slider { height: 100%; position: relative; }
+
+.slides {
+    display: flex;
+    height: 100%;
+    width: 300%; Adjust based on number of slides
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.slide {
+    flex: 0 0 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55); dark overlay for readability
+    z-index: 5;
+    pointer-events: none;
+}
+
+.home-content {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+small tweak for heading contrast
+#home-page h2, #home-page p { text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+*/
